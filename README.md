@@ -4,9 +4,6 @@ Official implementation of:
 
 **“Fine-Grained Multimodal Alignment with Cross-Attention Using CLIP for Enhanced Retrieval”**
 
-Department of Computer Science & Engineering  
-KLE Technological University, Hubli, Karnataka, India  
-
 ---
 
 ## 🔍 Abstract
