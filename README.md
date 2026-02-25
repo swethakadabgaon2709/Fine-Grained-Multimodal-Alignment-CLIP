@@ -1,6 +1,6 @@
 # Fine-Grained Multimodal Alignment with Cross-Attention Using CLIP for Enhanced Retrieval
 
-This repository contains the official implementation of our research work:
+Official implementation of:
 
 **“Fine-Grained Multimodal Alignment with Cross-Attention Using CLIP for Enhanced Retrieval”**
 
@@ -13,14 +13,14 @@ KLE Technological University, Hubli, Karnataka, India
 
 Large-scale vision–language models such as CLIP learn strong global image–text representations when trained on massive datasets. However, their performance deteriorates under low-resource conditions such as Flickr8k (8,092 images, 5 captions per image).
 
-This work proposes a **lightweight two-stage alignment framework**:
+This work proposes a lightweight two-stage alignment framework:
 
-1. **Stage 1:** Gentle global fine-tuning of CLIP on Flickr8k.
+1. **Stage 1:** Gentle global fine-tuning of CLIP on Flickr8k  
 2. **Stage 2:** A compact cross-attention module enabling fine-grained region–token alignment between:
-   - Region features extracted using Faster R-CNN
-   - Token-level text embeddings from CLIP
+   - Region features extracted using Faster R-CNN  
+   - Token-level text embeddings from CLIP  
 
-The proposed method improves retrieval performance significantly under limited data conditions while remaining computationally efficient.
+The method improves retrieval performance significantly under limited data conditions while remaining computationally efficient.
 
 ---
 
@@ -28,13 +28,18 @@ The proposed method improves retrieval performance significantly under limited d
 
 ### Stage 1 — Global Fine-Tuning
 
-CLIP image and text encoders are fine-tuned using contrastive learning:
+We fine-tune CLIP using contrastive learning.
 
-\[
-s_{global}(I, T) = \frac{\cos(g_I, g_T)}{\tau}
-\]
+Global similarity:
 
-We optimize the standard NT-Xent contrastive loss to align matching image–caption pairs and separate mismatched pairs.
+s_global(I, T) = cos(g_I, g_T) / τ
+
+where:
+- g_I = image embedding  
+- g_T = text embedding  
+- τ = temperature (0.07)
+
+We optimize the standard NT-Xent contrastive loss.
 
 Training Details:
 - Optimizer: AdamW
@@ -50,53 +55,37 @@ Training Details:
 
 ### Stage 2 — Fine-Grained Cross-Attention Alignment
 
-Global representations treat the entire image as a single vector. To enable localized reasoning:
+Global embeddings treat the image as a single vector.  
+To enable detailed grounding, we align region-level features with token-level embeddings.
 
-1. Region features \( r_k \) are extracted using a pretrained Faster R-CNN detector.
-2. Token embeddings \( t_m \) are obtained from CLIP’s text encoder.
-3. Cross-attention computes:
+Let:
+- r_k ∈ R^d = region feature from Faster R-CNN  
+- t_m ∈ R^d = token embedding  
 
-\[
-\alpha_{mk} =
-\frac{
-\exp\left(t_m^\top W_q^\top W_k r_k\right)
-}{
-\sum_{k'} \exp\left(t_m^\top W_q^\top W_k r_{k'}\right)
-}
-\]
+Cross-attention weights:
 
-4. Region aggregation:
+α_mk = exp(t_mᵀ W_qᵀ W_k r_k)  
+       / Σ_k' exp(t_mᵀ W_qᵀ W_k r_k')
 
-\[
-v_m = \sum_k \alpha_{mk} W_v r_k
-\]
+Region aggregation:
 
-5. Fine-grained similarity:
+v_m = Σ_k α_mk W_v r_k
 
-\[
-s_{fine}(I, T) =
-\frac{1}{M}
-\sum_{m=1}^{M}
-t_m^\top W_o v_m
-\]
+Fine-grained similarity:
 
-6. Final similarity:
+s_fine(I, T) = (1/M) Σ_m t_mᵀ W_o v_m
 
-\[
-s(I, T) = s_{global}(I, T) + \lambda s_{fine}(I, T)
-\]
+Final similarity:
+
+s(I, T) = s_global(I, T) + λ s_fine(I, T)
 
 In all experiments:
 
-\[
-\lambda = 1.0
-\]
+λ = 1.0
 
-Stage 2 updates only:
-- Cross-attention layers
-- Projection layers
-
-CLIP backbones remain frozen for stability.
+During Stage 2:
+- CLIP backbones are frozen  
+- Only cross-attention and projection layers are updated  
 
 ---
 
@@ -106,11 +95,11 @@ CLIP backbones remain frozen for stability.
 - 8,092 images
 - 40,460 captions (5 per image)
 - Standard split:
-  - 6,000 train
+  - 6,000 training
   - 1,000 validation
   - 1,000 test
 
-This represents a low-resource multimodal learning scenario.
+This represents a low-resource multimodal setting.
 
 ---
 
@@ -151,33 +140,30 @@ Fine-grained alignment provides consistent improvements over global-only adaptat
 
 The notebook includes:
 
-- Image → Top-K Caption Retrieval
-- Text → Top-K Image Retrieval
+- Image → Top-K Caption Retrieval  
+- Text → Top-K Image Retrieval  
 - Retrieval-based Visual Question Answering (VQA)
 
 For VQA:
-- The question embedding is matched with candidate caption embeddings.
-- The highest similarity caption is returned as the answer.
-- No separate answer classifier is trained.
+- The question embedding is matched with caption embeddings  
+- The most similar caption is returned as the answer  
+- No separate answer classifier is trained  
 
-This keeps the system lightweight and stable under low-resource constraints.
+This keeps the system lightweight and stable.
 
 ---
 
 ## ⚙️ Computational Efficiency
 
-- Stage 2 updates only lightweight cross-attention modules.
-- Faster R-CNN region features are precomputed and reused.
-- No heavy multimodal fusion backbone is trained.
-- Memory overhead remains low compared to large fusion models like ALBEF.
+- Stage 2 updates only lightweight cross-attention layers  
+- Faster R-CNN region features are precomputed and reused  
+- No heavy multimodal fusion backbone  
+- Stable under low-resource conditions  
 
 ---
 
 ## 🚀 How to Run (Colab)
 
-1. Open the notebook in Google Colab.
-2. Mount Google Drive.
+1. Open the notebook in Google Colab  
+2. Mount Google Drive  
 3. Set:
-
-```python
-DRIVE_ROOT = '/content/drive/MyDrive/.../flickr8k'
