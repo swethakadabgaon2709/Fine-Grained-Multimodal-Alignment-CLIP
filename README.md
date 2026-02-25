@@ -153,6 +153,16 @@ This keeps the system lightweight and stable.
 
 ---
 
+
+## 🎯 Key Contributions
+
+- Lightweight two-stage adaptation framework  
+- Explicit region–token cross-attention alignment  
+- Significant Recall@1 improvement under limited data  
+- Stable and computationally efficient design  
+
+---
+
 ## ⚙️ Computational Efficiency
 
 - Stage 2 updates only lightweight cross-attention layers  
