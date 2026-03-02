@@ -1,8 +1,5 @@
 # Fine-Grained Multimodal Alignment with Cross-Attention Using CLIP for Enhanced Retrieval
 
-Official implementation of:
-
-**“Fine-Grained Multimodal Alignment with Cross-Attention Using CLIP for Enhanced Retrieval”**
 
 ---
 
