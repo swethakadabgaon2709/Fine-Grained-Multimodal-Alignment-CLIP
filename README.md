@@ -302,7 +302,7 @@ DRIVE_ROOT = '/content/drive/MyDrive/.../flickr8k'
 
 # 👩‍💻 Authors
 
-This project was developed collaboratively with equal contribution from all authors.
+This project was developed collaboratively by the below mentioned authors.
 
 - **Khushi R** — https://github.com/khushir2345  
 - **Saniyanaz Momin** — https://github.com/saniyanazmomin23-tech  
