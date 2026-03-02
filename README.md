@@ -61,7 +61,7 @@ Our solution decouples:
 
 ---
 
-# 🏗 Architecture
+# 🏗 Architecture 
 
 ![Architecture Diagram](Architecture design.png)
 
