@@ -169,5 +169,46 @@ This keeps the system lightweight and stable.
 
 1. Open the notebook in Google Colab  
 2. Mount Google Drive  
-3. Set: Runtime as T4 GPU
-4. Run all the cells in order
+3. Set: DRIVE_ROOT = '/content/drive/MyDrive/.../flickr8k'
+4. Run all cells sequentially  
+
+---
+
+## 📂 Repository Structure
+
+
+Fine-Grained-Multimodal-Alignment-CLIP/
+│
+├── notebooks/
+│ └── fine_grained_clip_alignment.ipynb
+│
+├── results/
+├── paper/
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 🎯 Key Contributions
+
+- Lightweight two-stage adaptation framework  
+- Explicit region–token cross-attention alignment  
+- Significant Recall@1 improvement under limited data  
+- Stable and computationally efficient design  
+
+---
+
+## 👩‍💻 Authors
+
+This project was developed collaboratively by the below authors.
+
+- **Khushi R** — [GitHub](https://github.com/khushi-)
+- **Saniyanaz Momin** — [GitHub](https://github.com/saniyanaz-username)
+- **Swetha Kadabgaon** — [GitHub](https://github.com/swetha)
+- **Nidhi Kugunavar** — [GitHub](https://github.com/nidhi-ii24) 
+ 
+
+Department of Computer Science & Engineering  
+KLE Technological University  
+Hubli, Karnataka, India
