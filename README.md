@@ -173,4 +173,5 @@ This keeps the system lightweight and stable.
 
 1. Open the notebook in Google Colab  
 2. Mount Google Drive  
-3. Set:
+3. Set: Runtime as T4 GPU
+4. Run all the cells in order
