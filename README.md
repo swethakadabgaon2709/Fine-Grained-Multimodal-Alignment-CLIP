@@ -63,7 +63,7 @@ Our solution decouples:
 
 # 🏗 Architecture
 
-![Architecture Diagram](Architecture Design.png)
+![Architecture Diagram](Architecture design.png)
 
 ---
 
