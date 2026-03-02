@@ -248,12 +248,7 @@ Fine-Grained-Multimodal-Alignment-CLIP/
 ├── notebooks/
 │   └── fine_grained_clip_alignment.ipynb
 │
-├── images/
-│   └── architecture.png
-│
-├── paper/
-│   └── paper.pdf
-│
+├── Architecture design.png
 ├── requirements.txt
 └── README.md
 ```
