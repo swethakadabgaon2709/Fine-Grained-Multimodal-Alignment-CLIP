@@ -274,38 +274,55 @@ DRIVE_ROOT = '/content/drive/MyDrive/.../flickr8k'
 
 # 📜 References
 
-```
-@inproceedings{he2020momentum,
-  title={Momentum contrast for unsupervised visual representation learning},
-  author={He, Kaiming and Fan, Haoqi and Wu, Yuxin and Xie, Saining and Girshick, Ross},
-  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
-  pages={9729--9738},
-  year={2020}
-}
+---
+
+# 📚 References
+
+## CLIP
 
 ```
-
 @misc{radford2021learningtransferablevisualmodels,
-      title={Learning Transferable Visual Models From Natural Language Supervision}, 
-      author={Alec Radford and Jong Wook Kim and Chris Hallacy and Aditya Ramesh and Gabriel Goh and Sandhini Agarwal and Girish Sastry and Amanda Askell and Pamela Mishkin and Jack Clark and Gretchen Krueger and Ilya Sutskever},
-      year={2021},
-      eprint={2103.00020},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2103.00020}, 
+  title={Learning Transferable Visual Models From Natural Language Supervision},
+  author={Alec Radford and Jong Wook Kim and Chris Hallacy and Aditya Ramesh and Gabriel Goh and Sandhini Agarwal and Girish Sastry and Amanda Askell and Pamela Mishkin and Jack Clark and Gretchen Krueger and Ilya Sutskever},
+  year={2021},
+  eprint={2103.00020},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2103.00020}
 }
+```
 
 ---
 
+## ALBEF
 
+```
 @article{li2021align,
   title={Align before fuse: Vision and language representation learning with momentum distillation},
   author={Li, Junnan and Selvaraju, Ramprasaath and Gotmare, Akhilesh and Joty, Shafiq and Xiong, Caiming and Hoi, Steven Chu Hong},
-  journal={Advances in neural information processing systems},
+  journal={Advances in Neural Information Processing Systems},
   volume={34},
   pages={9694--9705},
   year={2021}
 }
+```
+
+---
+
+## Faster R-CNN
+
+```
+@ARTICLE{7485869,
+  author={Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title={Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks},
+  year={2017},
+  volume={39},
+  number={6},
+  pages={1137-1149},
+  doi={10.1109/TPAMI.2016.2577031}
+}
+```
 
 
 # 👩‍💻 Authors (Equal Contribution)
