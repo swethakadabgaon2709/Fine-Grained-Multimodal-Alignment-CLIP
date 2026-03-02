@@ -279,16 +279,23 @@ DRIVE_ROOT = '/content/drive/MyDrive/.../flickr8k'
 
 # 📚 References
 
-1. **CLIP** — Radford et al., 2021  
-   Learning Transferable Visual Models From Natural Language Supervision  
-   https://arxiv.org/abs/2103.00020  
+1. **CLIP — Radford et al., 2021**  
+   *Learning Transferable Visual Models From Natural Language Supervision*  
+   Paper (arXiv): https://arxiv.org/abs/2103.00020  
+   PDF: https://arxiv.org/pdf/2103.00020.pdf  
 
-2. **ALBEF** — Li et al., NeurIPS 2021  
-   Align Before Fuse: Vision and Language Representation Learning with Momentum Distillation  
+2. **ALBEF — Li et al., NeurIPS 2021**  
+   *Align Before Fuse: Vision and Language Representation Learning with Momentum Distillation*  
+   NeurIPS Proceedings: https://proceedings.neurips.cc/paper/2021/hash/505259756244493872b7709a8a01b536-Abstract.html  
+   arXiv Version: https://arxiv.org/abs/2107.07651  
+   PDF: https://arxiv.org/pdf/2107.07651.pdf  
 
-3. **Faster R-CNN** — Ren et al., TPAMI 2017  
-   Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks  
-   https://doi.org/10.1109/TPAMI.2016.2577031  
+3. **Faster R-CNN — Ren et al., TPAMI 2017**  
+   *Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks*  
+   IEEE Xplore: https://ieeexplore.ieee.org/document/7485869  
+   DOI: https://doi.org/10.1109/TPAMI.2016.2577031  
+   arXiv Version: https://arxiv.org/abs/1506.01497  
+   PDF: https://arxiv.org/pdf/1506.01497.pdf  
 
 ---
 
