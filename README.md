@@ -63,15 +63,7 @@ Our solution decouples:
 
 # 🏗 Architecture
 
-Save the architecture diagram from the paper as:
-
-```
-images/architecture.png
-```
-
-Then it will render below:
-
-![Architecture Diagram](images/architecture.png)
+![Architecture Diagram](architecture design.drawio (2).png)
 
 ---
 
