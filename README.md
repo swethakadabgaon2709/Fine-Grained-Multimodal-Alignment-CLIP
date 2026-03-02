@@ -300,7 +300,7 @@ DRIVE_ROOT = '/content/drive/MyDrive/.../flickr8k'
 ---
 
 
-# 👩‍💻 Authors (Equal Contribution)
+# 👩‍💻 Authors
 
 This project was developed collaboratively with equal contribution from all authors.
 
