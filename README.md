@@ -272,10 +272,6 @@ DRIVE_ROOT = '/content/drive/MyDrive/.../flickr8k'
 
 ---
 
-# 📜 References
-
----
-
 
 # 📚 References
 
