@@ -302,11 +302,13 @@ DRIVE_ROOT = '/content/drive/MyDrive/.../flickr8k'
 
 # 👩‍💻 Authors
 
-This project was developed collaboratively by the below mentioned authors.
+This project was developed collaboratively with equal contribution from all authors.
 
-- **Khushi R** — https://github.com/khushir2345  
-- **Saniyanaz Momin** — https://github.com/saniyanazmomin23-tech  
-- **Swetha Kadabgaon** — https://github.com/swethakadabgaon2709  
-- **Nidhi Kugunavar** — https://github.com/nidhi-ii24
-  
+| Name | GitHub | LinkedIn |
+|------|--------|----------|
+| **Swetha Kadabgaon** | [swethakadabgaon2709](https://github.com/swethakadabgaon2709) | [Swetha Kadabgaon](https://www.linkedin.com/in/swetha-kadabgaon-13a291326) |
+| **Khushi R** | [khushir2345](https://github.com/khushir2345) | [Khushi R](https://www.linkedin.com/in/khushi-r-a2a79a311) |
+| **Nidhi Kugunavar** | [nidhi-ii24](https://github.com/nidhi-ii24) | [Nidhi Kugunavar](https://www.linkedin.com/in/nidhi-kugunavar-b52b0632a) |
+| **Saniyanaz Momin** | [saniyanazmomin23-tech](https://github.com/saniyanazmomin23-tech) | [Saniyanaz Momin](https://www.linkedin.com/in/saniyanaz-momin-9799752a7) |
+
 ---
