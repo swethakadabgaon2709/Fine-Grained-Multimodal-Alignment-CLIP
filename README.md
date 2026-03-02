@@ -1,7 +1,6 @@
 # Fine-Grained Multimodal Alignment with Cross-Attention Using CLIP for Enhanced Retrieval
 
 
----
 
 ## 🔍 Abstract
 
